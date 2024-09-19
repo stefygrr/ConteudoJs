@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Dinamica</title>
+</head>
+<body>
+    <ul class="listatime">
+
+    </ul>
+</body>
+<script>
+    times = ["Corinthians", "São Paulo", "Palmeiras", "Vasco"]
+    var listadetimes = document.querySelector('ul.listatime')
+    for(var i = 0; i < times.length; i++){
+        var time = times[i];
+        var listItem = document.createElement('li');
+        listItem.innerText = time;
+        listItem.style.border = '1px solid blue'
+        listadetimes.appendChild(listItem);
+    }
+</script>
+</html>

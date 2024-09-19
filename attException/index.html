@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephnay Camily">
+    <meta name="description" content="Atividade Prática">
+    <meta name="keyworld" content="HTML, CSS, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciamento de Funcionários</title>
+</head>
+<body>
+    <h1>Cadastro de Funcionários</h1>
+    <form id="nomeFuncionario">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+        <br>
+        <label for="posição">Cargo:</label>
+        <input type="text" id="posicao" required>
+        <br>
+        <label for="departamento">Departamento (Somente para Gerente):</label>
+        <input type="text" id="departamento">
+        <br>
+        <label for="linguagem">Linguagem de Programação (Somente para Desenvolvedor):</label>
+        <input type="text" id="linguagem">
+        <br>
+        <button type="button" onclick="cadastrarFuncionario()">Cadastrar Funcionário</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="exception.js"></script>
+</body>
+</html>
